@@ -1,0 +1,14 @@
+{
+    "name": "Cookie Reader",
+    "description": "Reads all cookies and stores in localStorage",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "tabs", "scripting", "https://*/*", "cookies"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "host_permissions": ["http://*/*", "https://*/*"]
+}
